@@ -11,7 +11,7 @@ def area_circulo(a):
     """
     return (a**2)*3.14
 
-def volumen_cilindro(h):
+def volumen_cilindro(a, h):
     """" La funcion calcula el volumen de un cilindro
     Parametros:
         - h : numero real que representa la altura de cilindro
