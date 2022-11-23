@@ -7,7 +7,8 @@ def factorial_bucle(num):
     Parametros:
         - num : Un numero real
     Salida:
-        - Un numero real con el factorial calculado"""
+        - Un numero real con el factorial calculado
+    """
 
     factorial = 1
     for i in range(1, num+1):
@@ -21,7 +22,8 @@ def factorial_recursiva(num):
     Parametros:
         - num : Un numero real
     Salida:
-        - Un numero real con el factorial calculado"""
+        - Un numero real con el factorial calculado
+    """
     if num == 1:
         return 1
     else:
