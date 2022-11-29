@@ -21,7 +21,7 @@ def may_frecuencia(dic_frecuencias):
     palabra_mas_repetida = ()
     repe_max = 0
     clave_max = " "
-    for palabra, repeticiones in dic_fracuencias.items():
+    for palabra, repeticiones in dic_frecuencias.items():
         if repeticiones > repe_max:
             rep_max = repeticiones
             clave_max = palabra

@@ -1,6 +1,6 @@
 # Escribir una función que reciba una muestra de
 # números en una lista y devuelva su media.
-numero = [1, 2, 3, 4, 5, 6]
+
 def media(numero):
     """" Esta funcion muestra lus numeros de una lista y devuelve la media de estos numeros
     Parametros:
@@ -11,3 +11,5 @@ def media(numero):
 
 print(numero)
 print(media(numero))
+
+
