@@ -2,7 +2,12 @@
 # binario y otra que convierta un número binario en decimal
 
 def binario(num):
-    """" """
+    """" Esta funcion convierte un numero decimal en binario
+    Parametro:
+    - num: es un numero entero
+    Salida:
+    - Un numero decimal correspondiente a n
+    """
     binario = " "
     while num // 2 != 0:
         binario = str(num % 2) + binario
@@ -10,15 +15,28 @@ def binario(num):
     return str(num) + binario
 
 def decimal(num):
-    """" """
-    num_dec = 0
+    """" Esta funcion convierte un numero decimal en decimal
+    Parametro: numero
+    - num: numero entero
+    Salida:
+    - Un numero binario que corresponde a num
+    """
+    l_binario = list(binario(num))
+    l_binario.reverse()
+    l_binario.remove(" ")
+    suma_binario = []
+    posicion = 0
+    for cifra in l_binario:
+        if cifra == "1":
+            suma_binario.append(2 ** posicion * int(cifra))
+            posicion += 1
+        else:
+            posicion += 1
+    return sum(suma_binario)
 
-    for a, b in enumerate(int(binario(num[::-1]))):
-        numero_dec += int(b) * 2 ** a
-        return num_dec
 
 num = int(input("Introduce un numero decimal para convertir en binario:\n"))
-print("Numero decimal a binario es: "+ binario(num))
-print("Numero binario convertido a decimal es: " + decimal(num))
+print("El numero binario es: ", binario(num))
+print("El numero decimal es: ", decimal(num))
 
 

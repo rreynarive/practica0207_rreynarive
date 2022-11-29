@@ -4,7 +4,11 @@
 # generado con la función anterior y devuelva una tupla con la
 # palabra más repetida y su frecuencia.
 def frecuencia(fragmento):
-    """"
+    """" Esta funcion cuenta el numero de veces que aparece cada palabra en un texto
+    Parametro:
+    - fragmeto: Es una cadena de caracteres
+    Salida:
+    - Devuelve la frecuencia con las palabras contenidas en el fragmento
     """
     dic_frecuencias = {}
     list_palabras = fragmento.split(" ")
@@ -16,8 +20,6 @@ def frecuencia(fragmento):
     return dic_frecuencias
 
 def may_frecuencia(dic_frecuencias):
-    """"
-    """
     palabra_mas_repetida = ()
     repe_max = 0
     clave_max = " "

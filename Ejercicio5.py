@@ -18,5 +18,5 @@ def cuadrado(l_num):
    return l_cuadrado
 
 l_num = input("Introduzca numeros separados por comas:\n")
-print(l_num)
-print(cuadrado(l_num))
+print("Lista de numeros: ", l_num)
+print("Lista de cuadrados", cuadrado(l_num))
